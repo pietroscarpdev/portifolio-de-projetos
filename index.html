@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portifolio</title>
+</head>
+<body>
+    <header class="container text-center">
+        
+        <img src="img/avatar-perfil.jpg" alt="avatar do pietro" class="rounded-circle" width="200" height="200" srcset="">
+        <p class="lead">Eu sou Pietro_</p>
+        <h1>Eu estudo programação!</h1>
+        <p>Estou no segundo ano do ensino médio, quero ser dev front-end e pretendo também fazer o curso de análise e
+            desenvolvimento de sistemas. Veja os projetos que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge text-bg-secondary"> Conhecimento básico em HTML</p>
+            <p class="badge text-bg-secondary"> CSS</p>
+            <p class="badge text-bg-secondary"> JavaScript</p>
+            <p class="badge text-bg-secondary"> Python</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+            <div class="card">
+                <img src="img/projeto-1.jpg" class="card-img-top" alt="Imagem do projeto de uma calculadora virtual"> 
+                <div class="card-body">
+                  <h5 class="card-title">Minha Calculadora: Uma Calculadora Simples</h5>
+                  <p class="card-text">Projeto de uma calculadora online desenvolvida com HTML, CSS e JavaScript. A aplicação realiza operações básicas (adição, subtração, multiplicação e divisão) com uma interface moderna e responsiva.</p>
+                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja o projeto</button>
+                </div>
+              </div>
+        </div>
+
+             <!-- Projeto 2 -->
+             <div class="col-md-4">
+             <div class="card">
+                <img src="img/projeto-2.jpg" class="card-img-top" alt="Imagem do projeto de um site simples de sistemas">
+                <div class="card-body">
+                  <h5 class="card-title">Meu Site de Sistemas: Um Site Pessoal</h5>
+                  <p class="card-text">Este projeto consiste em um sistema desenvolvido para atender às necessidades operacionais de uma empresa, oferecendo funcionalidades que otimizam processos internos e facilitam a gestão de informações. O sistema permite o controle de [cadastro de clientes, produtos, vendas, estoque, financeiro, etc. — ajuste conforme o caso], com foco na eficiência, usabilidade e segurança dos dados.</p>
+                  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja o projeto</button>
+                </div>
+              </div>
+            </div> 
+         </div>
+    </main>
+
+    <!-- Modal 1 -->
+     <div class="modal" id="modal1" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Minha Calculadora: Uma Calculadora Simples.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <p>Este projeto consiste em uma calculadora simples desenvolvida com HTML, CSS e JavaScript. A proposta foi criar uma aplicação web funcional que permita ao usuário realizar operações matemáticas básicas de forma prática e intuitiva.</p>
+         <p>A estrutura da calculadora foi construída com HTML, organizando os botões de números e operadores em uma interface limpa e de fácil compreensão. Para o design visual, utilizei CSS, aplicando estilos que tornam o layout responsivo, moderno e agradável aos olhos, com cores suaves e botões interativos que respondem ao clique do usuário.</p>
+         <p>A lógica da calculadora foi implementada em JavaScript, permitindo a realização de operações como adição, subtração, multiplicação e divisão. Além disso, o script lida com situações como múltiplos cliques em operadores, limpeza da tela, e o uso do ponto decimal. Todo o funcionamento é feito no lado do cliente, sem a necessidade de conexão com servidores ou bancos de dados.</p>
+         <p>Este projeto me ajudou a praticar a manipulação do DOM, eventos em JavaScript, e aplicar conceitos importantes de lógica de programação. Também me permitiu trabalhar na organização do código e melhorar minhas habilidades em front-end.</p>
+         <img src="img/projeto-1.jpg" class="img-fluid w-100"
+         alt="Imagem representativa do projeto de uma calculadora virtual">
+      </div>
+      <div class="modal-footer">
+        <a href="">Ver projeto ao vivo</a>
+        <a href="">Ver código do projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Meu Site de Sistemas: Um Site Pessoal.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <p>Este projeto é um site pessoal que desenvolvi com o objetivo de apresentar meus conhecimentos, projetos e habilidades na área de desenvolvimento de sistemas. A aplicação foi construída utilizando React para a interface do usuário, Node.js no back-end e MySQL como banco de dados, permitindo uma estrutura sólida, moderna e escalável.</p>
+         <p>A interface foi desenvolvida com React, proporcionando uma navegação fluida, componentização eficiente e uma experiência dinâmica para o usuário. No back-end, utilizei Node.js com Express para gerenciar as rotas e processar as requisições, garantindo um bom desempenho na comunicação entre o cliente e o servidor. Para armazenamento de dados, como mensagens de contato ou informações de projetos, utilizei o banco de dados MySQL, com consultas otimizadas e seguras.</p>
+         <p>Além disso, implementei boas práticas de desenvolvimento como responsividade, organização de código, validações de entrada e separação de responsabilidades entre front-end e back-end. Este projeto é tanto uma ferramenta de apresentação profissional quanto uma base para futuras evoluções, como integração com APIs externas ou um painel administrativo.</p>
+         <img src="img/projeto-2.jpg" class="img-fluid w-100"
+         alt="Imagem representativa do projeto de um site de sistemas">
+      </div>
+      <div class="modal-footer">
+        <a href="">Ver projeto ao vivo</a>
+        <a href="">Ver código do projeto</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/pietroscarpdev">GitHub</a>
+        </div>
+        <p class="my-5">&#169; Copyright 2025. Produzido por Pietro Jesus Scarpelim.</p>
+        
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"
+    
+              ></script>
+
+</body>
+
+</html>
